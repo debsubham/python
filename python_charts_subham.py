@@ -463,7 +463,7 @@ print(user1.short_name())
 print(user1.likes("Chicken")) ##only pass the things and it will automaticly fetch in User's methods
 
 
-user2 = User("Babai","Deb", 24)
+user2 = User("Babai","Deb", 89)
 
 print(user2.full_name())
 print(user2.short_name())
@@ -559,3 +559,63 @@ print(user2) ###return self.first
 
 ################################################################################
 258 : inheritance example User and Modaretor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##############################################Iterators and Generators
+
+
+####Iterators
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### Generators
+
+ def count_up_to(max):
+     count = 1
+     while count <= max :
+         yield count
+         count += 1
+
+counter = count_up_to(5)

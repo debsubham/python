@@ -42,7 +42,7 @@ class Deck:
         return self._deal(hand_size)
     def shuffle(self):
         if self.count() != 52:
-            raise ValueError("omly full cards can be suffle")
+            raise ValueError("only full cards can be suffle")
         shuffle(self.cards)
         return ("cards has been shuffled")
 
@@ -53,13 +53,16 @@ class Deck:
 
 card2 = Deck()
 print(len(card2.cards))
-card2._deal(20)
-print(len(card2.cards))
-card2._deal(56)
-print(len(card2.cards))
-card2._deal(1)
+# card2._deal(20)
+# print(len(card2.cards))
+# card2._deal(56)
+# print(len(card2.cards))
+# card2._deal(1)
 
 # card1 = Card("A", "Hearts")
+
+
+print(card2)
 
 # print(card1)
 # # class Deck:
