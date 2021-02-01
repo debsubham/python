@@ -8,7 +8,24 @@ def summing(n, func):
 def square(x):
   return x*x
 
-result = summing(10, square)
+def cube(x):
+  return x*x*x
 
-
+result = summing(3, square)
+result2 = summing(3, cube)
 print(result)
+print(result2)
+
+
+####################
+
+from random import choice
+
+def greet(person):
+  def get_mood():
+    msg = choice(("Hello there ","Go away ","I love you "))
+    return msg
+  result = get_mood() + person
+  return result
+
+print(greet("Subham"))
