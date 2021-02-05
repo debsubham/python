@@ -14,4 +14,4 @@ def order(main, side):
 
 print(greet("todd"))
 
-print(order("subham","deb","babai"))
+print(order("subham","deb"))
