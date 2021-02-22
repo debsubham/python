@@ -12,6 +12,8 @@ with open("fighters.csv") as file:
     print(row)
 
 
+##**** if the data separated with $ or | or * we use reader(file, delimiter= "$")
+
 # upper one is reader
 # below one is DictReader
 from csv import DictReader
