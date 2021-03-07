@@ -19,4 +19,19 @@ class Cat(Animal):
 
 first_cat1 = Cat("pussy", "spanish", "car")
 
-first_cat1.play()
+# first_cat1.play()
+
+import pickle
+
+
+##first step of pickling(save as binary)
+# with open("pets.pickle", "wb") as file:
+#   pickle.dump(first_cat1, file)
+
+
+##second step pickling(open binary to normal value)
+with open("pets.pickle", "rb") as file:
+  zombie_blue = pickle.load(file)
+  print(zombie_blue)
+  print(zombie_blue.play())
+
